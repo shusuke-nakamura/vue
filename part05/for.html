@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>速習Vue.js</title>
+</head>
+<body>
+    <!--ページ本体-->
+    <div id="app">
+        <table class="table">
+            <th>ISBN</th>
+            <th>書名</th>
+            <th>価格</th>
+            <tr v-for="b in books">
+                <td>{{ b.isbn }}</td>
+                <td>{{ b.title }}</td>
+                <td>{{ b.price }}円</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+    <script src="./lib/for.js"></script>    
+</body>
+</html>
